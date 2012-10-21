@@ -1,4 +1,8 @@
 PingstprayerDbApi::Application.routes.draw do
+  resources :thanksgivings
+
+  resources :requests
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
