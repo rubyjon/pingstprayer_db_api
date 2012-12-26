@@ -1,0 +1,21 @@
+<%= form_for(@thanksgiving) do |f| %>
+  <% if @thanksgiving.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thanksgiving.errors.count, "error") %> prohibited this thanksgiving from being saved:</h2>
+
+      <ul>
+      <% @thanksgiving.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :thanks %><br />
+    <%= f.text_field :thanks %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
