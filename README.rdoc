@@ -1,2 +1,2 @@
-== Welcome to Rails
+== PingstPraye Database API 
 This is the Database API for the mobile application PingstPrayer.
