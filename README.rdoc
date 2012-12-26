@@ -1,2 +1,2 @@
-== PingstPraye Database API 
+== PingstPrayer Database API 
 This is the Database API for the mobile application PingstPrayer.
