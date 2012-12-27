@@ -3,7 +3,6 @@ class ThanksgivingsController < ApplicationController
   # GET /thanksgivings.json
   def index
     @thanksgivings = Thanksgiving.all
-    #@thanksgivings.kind_of?(Array)
     @thanksgivings.reverse!
 
     respond_to do |format|

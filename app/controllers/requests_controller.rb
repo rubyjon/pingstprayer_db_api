@@ -3,6 +3,7 @@ class RequestsController < ApplicationController
   # GET /requests.json
   def index
     @requests = Request.all
+    @requests.reverse!
 
     respond_to do |format|
       format.html # index.html.erb
