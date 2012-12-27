@@ -3,12 +3,8 @@ class ThanksgivingsController < ApplicationController
   # GET /thanksgivings.json
   def index
     @thanksgivings = Thanksgiving.all
-    if(@thanksgivings.kind_of?(Array))
-      puts 'true'
-    else
-      puts 'false'
-    end
-    #@thanksgivings.reverse!
+    #@thanksgivings.kind_of?(Array)
+    @thanksgivings.reverse!
 
     respond_to do |format|
       format.html # index.html.erb
