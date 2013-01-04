@@ -41,7 +41,7 @@ class ThanksgivingsController < ApplicationController
   # POST /thanksgivings
   # POST /thanksgivings.json
   def create
-    @thanksgiving = Thanksgiving.new(params[:thanksgiving])
+    @thanksgiving = Thanksgiving.new(:thanksgiving => params[:thanksgiving])
 
     respond_to do |format|
       if @thanksgiving.save
